@@ -14,3 +14,20 @@ EXPOSE 8080
 
 # Run the jar file
 ENTRYPOINT ["java", "-jar", "spring-boot-docker-demo.jar"]
+
+
+
+
+#docker login
+
+# adding tag for image
+#docker tag spring-boot-docker-demo your-username/spring-boot-docker-demo:latest
+
+# pushing image to the docker hub
+#docker push your-username/spring-boot-docker-demo:latest
+
+# pulling from docker hub
+#your-username/spring-boot-docker-demo:latest
+
+# starting docker image
+#docker run -p 9090:8080 your-username/spring-boot-docker-demo:latest
